@@ -2,9 +2,8 @@
 
 const config = {
   content: [
-    // Diz ao Tailwind para ler TODOS os ficheiros
-    // dentro da pasta 'src' que terminam com estas extensões.
-    './src/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {},

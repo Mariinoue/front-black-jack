@@ -40,13 +40,12 @@ const Input = ({ handleChange, disabled, readOnly, className = '', label = '', c
           w-full block p-3 border rounded-md text-base
           focus:outline-none focus:ring-2 focus:ring-blue-500
           
-          /* --- INÍCIO DA MUDANÇA DE ESTILO --- */
-          ${disabled ? 'bg-gray-600 border-gray-500 cursor-not-allowed text-gray-400' : ''}
-          ${readOnly ? 'bg-gray-700 border-gray-600' : ''}
-          /* Ajuste: Fundo escuro, texto claro e borda escura para combinar com o login */
-          ${!hasActionsState ? 'bg-gray-700 border-gray-600 text-white placeholder-gray-400' : ''}
-          ${canShowError ? 'border-red-500 ring-red-500' : 'border-gray-600'}
-          /* --- FIM DA MUDANÇA DE ESTILO --- */
+          ${disabled ? 'bg-gray-300 border-gray-400 cursor-not-allowed text-gray-500' : ''}
+          ${readOnly ? 'bg-gray-200 border-gray-400' : ''}
+          
+          ${!hasActionsState ? 'bg-white border-gray-300 text-gray-900 placeholder-gray-500' : ''}
+          
+          ${canShowError ? 'border-red-500 ring-red-500' : 'border-gray-300'}
           
           ${className}
         `}

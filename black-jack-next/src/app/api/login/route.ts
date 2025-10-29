@@ -19,7 +19,7 @@ export async function POST(request: Request): Promise<NextResponse<LoginResponse
       return NextResponse.json({ message: 'Email e senha são obrigatórios' }, { status: 400 })
     }
 
-    if (email === 'email@teste.com' && password === '123456') {
+    if (email === 'email@teste.com' && password === process.env.USER_SECRET_PASSWORD) {
       return NextResponse.json({ token: 'fake-jwt-token', message: "Login bem-sucedido" })
     }
 
